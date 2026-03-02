@@ -1,0 +1,14 @@
+git clone https://github.com/sq08201329/claw.git
+git push origin main
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINvVqIG6bXC8YiFRzxnBGvFWuIlGFv0vU+4jQY9vfM/z sq08201329@github.com
+git init
+git branch main
+git config --global user.email sq08201329@126.com
+git config --global user.name sq08201329
+git commit -m 'some settings'
+git add *
+git commit -m 'some settings files'
+git push origin main
+git remote set-url origin git@github.com:sq08201329/claw.git
+git push origin main
+git branch

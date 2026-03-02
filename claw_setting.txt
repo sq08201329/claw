@@ -50,5 +50,12 @@ App Secre:
   }
 }
 群组设置:
-openclaw config set channels.feishu.groupPolicy "allowlist"  # 或 "open" / "disabled"
+openclaw config set channels.feishu.groupPolicy "open"  # 或 "open" / "disabled"
 openclaw config set channels.feishu.requireMention false     # true      群聊需要@才回复
+事件与回调:
+机器人进群v2.0
+im.chat.member.bot.added_v1
+机器人被移出群v2.0
+im.chat.member.bot.deleted_v1
+接收消息v2.0
+im.message.receive_v1
