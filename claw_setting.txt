@@ -1,0 +1,54 @@
+飞书应用凭证
+App ID:
+App Secre:
+应用权限设置:
+{
+  "scopes": {
+    "tenant": [
+      "aily:file:read",
+      "aily:file:write",
+      "application:application.app_message_stats.overview:readonly",
+      "application:application:self_manage",
+      "application:bot.menu:write",
+      "bitable:app",
+      "bitable:app:readonly",
+      "contact:contact.base:readonly",
+      "contact:user.base:readonly",
+      "contact:user.employee_id:readonly",
+      "docx:document",
+      "docx:document.block:convert",
+      "docx:document:readonly",
+      "drive:drive",
+      "drive:drive:readonly",
+      "event:ip_list",
+      "im:chat.access_event.bot_p2p_chat:read",
+      "im:chat.members:bot_access",
+      "im:message",
+      "im:message.group_at_msg:readonly",
+      "im:message.p2p_msg:readonly",
+      "im:message.reactions:read",
+      "im:message:readonly",
+      "im:message:send_as_bot",
+      "im:resource",
+      "task:attachment:read",
+      "task:attachment:write",
+      "task:comment:read",
+      "task:comment:write",
+      "task:task:read",
+      "task:task:write",
+      "task:tasklist:read",
+      "task:tasklist:write",
+      "wiki:wiki",
+      "wiki:wiki:readonly"
+    ],
+    "user": [
+      "aily:file:read",
+      "aily:file:write",
+      "docx:document:readonly",
+      "im:chat.access_event.bot_p2p_chat:read"
+    ]
+  }
+}
+群组设置:
+openclaw config set channels.feishu.groupPolicy "allowlist"  # 或 "open" / "disabled"
+openclaw config set channels.feishu.requireMention false     # true      群聊需要@才回复
