@@ -70,3 +70,8 @@ openclaw agents add Talk-xianliao --workspace ~./workspace-talk-xianliao
 openclaw chat --agent talk-xianliao
 # 或使用 agent ID
 openclaw chat --agent-id talk-xianliao
+
+安装Self-Improving Agent
+git clone https://github.com/peterskoett/self-improving-agent.git ~/.openclaw/skills/self-improving-agent
+mkdir -p ~/.openclaw/workspace/.learnings
+root@iv-yegynhzqww4c5qwyofuz:~/.openclaw/workspace/.learnings# touch LEARNINGS.md ERRORS.md FEATURE_REQUESTS.md
