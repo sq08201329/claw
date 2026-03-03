@@ -1,3 +1,8 @@
+#切换agents 
+/model talk-xianliao
+#新会话
+/new
+
 飞书应用凭证
 App ID:
 App Secre:
@@ -61,8 +66,9 @@ im.chat.member.bot.deleted_v1
 im.message.receive_v1
 
 多agets:
-openclaw agents add a-market --workspace ~/workspace-a-market
-openclaw agents add talk-xianliao --workspace ~/workspace-talk-xianliao
+openclaw agents add a-market --workspace ~/.openclaw/workspace-a-market
+openclaw agents add talk-xianliao --workspace ~/.openclaw/workspace-talk-xianliao
+openclaw agents remove talk-xianliao
 绑定群id和agentid
 
 切换agent
@@ -70,8 +76,17 @@ openclaw agents add talk-xianliao --workspace ~/workspace-talk-xianliao
 openclaw chat --agent talk-xianliao
 # 或使用 agent ID
 openclaw chat --agent-id talk-xianliao
+openclaw agent --agent talk-xianliao --message "你好"
+openclaw agents bind talk-xianliao --channel feishu --chat-id "oc_943d7a305cd5f57676b89bd94d1e232b"
 
 安装Self-Improving Agent
 git clone https://github.com/peterskoett/self-improving-agent.git ~/.openclaw/skills/self-improving-agent
 mkdir -p ~/.openclaw/workspace/.learnings
 root@iv-yegynhzqww4c5qwyofuz:~/.openclaw/workspace/.learnings# touch LEARNINGS.md ERRORS.md FEATURE_REQUESTS.md
+
+# 启用 hook
+openclaw hooks enable self-improvement
+# 查看已启用的 hooks
+openclaw hooks list
+# 查看 hook 状态
+openclaw hooks status self-improvement
