@@ -61,8 +61,8 @@ im.chat.member.bot.deleted_v1
 im.message.receive_v1
 
 多agets:
-openclaw agents add A-market --workspace ~./workspace-a-market
-openclaw agents add Talk-xianliao --workspace ~./workspace-talk-xianliao
+openclaw agents add a-market --workspace ~/workspace-a-market
+openclaw agents add talk-xianliao --workspace ~/workspace-talk-xianliao
 绑定群id和agentid
 
 切换agent
