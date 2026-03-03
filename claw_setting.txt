@@ -59,3 +59,14 @@ im.chat.member.bot.added_v1
 im.chat.member.bot.deleted_v1
 接收消息v2.0
 im.message.receive_v1
+
+多agets:
+openclaw agents add A-market --workspace ~./workspace-a-market
+openclaw agents add Talk-xianliao --workspace ~./workspace-talk-xianliao
+绑定群id和agentid
+
+切换agent
+# 使用特定 agent 启动对话
+openclaw chat --agent talk-xianliao
+# 或使用 agent ID
+openclaw chat --agent-id talk-xianliao
