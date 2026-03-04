@@ -70,6 +70,15 @@ openclaw agents add a-market --workspace ~/.openclaw/workspace-a-market
 openclaw agents add talk-xianliao --workspace ~/.openclaw/workspace-talk-xianliao
 openclaw agents remove talk-xianliao
 绑定群id和agentid
+"bindings": [
+  {
+    "agentId": "talk-xianliao",
+    "match": {
+      "channel": "feishu",
+      "peer": { "kind": "group", "id": "oc_943d7a305cd5f57676b89bd94d1e232b" }
+    }
+  }
+],
 
 切换agent
 # 使用特定 agent 启动对话
