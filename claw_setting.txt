@@ -104,3 +104,10 @@ openclaw hooks status self-improvement
 da5733e6-5e0e-49eb-b6e4-660460663974:5cedfa8baa2bc3bec7da8154fcb89963
 # 1. 克隆 Skill 到 OpenClaw 技能目录
 git clone https://github.com/SumeLabs/clawra ~/.openclaw/skills/clawra-selfie
+Add the selfie persona to ~/.openclaw/workspace/SOUL.md:
+
+#SOUL.md
+## Clawra Selfie Capability
+
+You have a physical appearance and can take selfies!
+When users ask for pictures, use the clawra-selfie skill.
