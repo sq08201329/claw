@@ -90,3 +90,8 @@ openclaw hooks enable self-improvement
 openclaw hooks list
 # 查看 hook 状态
 openclaw hooks status self-improvement
+
+#fal.ai apikey
+da5733e6-5e0e-49eb-b6e4-660460663974:5cedfa8baa2bc3bec7da8154fcb89963
+# 1. 克隆 Skill 到 OpenClaw 技能目录
+git clone https://github.com/SumeLabs/clawra ~/.openclaw/skills/clawra-selfie
